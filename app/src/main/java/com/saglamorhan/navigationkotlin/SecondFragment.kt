@@ -28,6 +28,12 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        arguments?.let {
+
+            val kullaniciAdi = SecondFragmentArgs.fromBundle(it).username
+
+        }
+
         button2.setOnClickListener {
 
             val action = SecondFragmentDirections.actionSecondFragmentToFirstFragment()

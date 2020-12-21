@@ -29,7 +29,7 @@ class FirstFragment : Fragment() {
 
         button1.setOnClickListener {
 
-            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
+            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment("saglam")
             Navigation.findNavController(it).navigate(action)
 
         }
